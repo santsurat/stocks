@@ -1,12 +1,13 @@
 body{
+    display: block;
     text-align: center;
     background-color: aquamarine;
 }
 
 label{
     display: block;
-    padding-bottom: 0.5rem;
-    padding: 1rem;
+   padding: 1rem;
+   
 }
 input{
     height: 3vh;
@@ -15,6 +16,10 @@ input{
 button{
     color: orangered;
     background-color: white;
+}
+button:hover{
+    background-color: black;
+    transition: .1s;
 }
 div{
     margin-top: 1rem;
