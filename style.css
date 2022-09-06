@@ -1,16 +1,14 @@
 body{
-    display: block;
-    text-align: center;
     background-color: aquamarine;
+    text-align:center;
 }
-
 label{
-    display: block;
-   padding: 1rem;
-   
+    margin-top:1rem;
+    margin-bottom:1rem;
+    display:block
 }
 input{
-    height: 3vh;
+    height: 2vh;
     text-align: center;
 }
 button{
