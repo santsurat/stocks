@@ -14,18 +14,22 @@ var curr = Number(currentPrice.value)
 
  CalculateProfitAndLoss(actual,qty,curr);
 }
-//debugger;
+debugger;
 function CalculateProfitAndLoss(initial,quantity,Current) {
 
-        if(initial > Current){
-           var loss = (initial - Current) * quantity;
-           var lossPercentage = (loss / initial) * 100;
-           ShowOutput(`Hey the profit is ${loss}and the percentage is ${lossPercentage}%`);
-        }else if(Current > initial){
-            var profit = ( Current - initial ) * quantity;
-            var profitPercentage = (profit / initial) * 100;
 
-           ShowOutput(`Hey the profit is ${profit}and the percentage is ${profitPercentage}%`);
+   if(initial > Current){
+      var loss = ( initial-Current) * quantity;
+      var lossPercentage = (loss / initial) * 100;
+      ShowOutput(`Hey the Loss is ${loss}and the Losspercentage is ${lossPercentage}%`);
+
+
+        }else if(Current > initial){
+         var profit = ( Current-initial  ) * quantity;
+         var profitPercentage = (profit / initial) * 100;
+   
+        ShowOutput(`Hey the profit is ${profit}and the profitpercentage is ${profitPercentage}%`);
+   
         }else{
            ShowOutput(`no pain no gain and no gain no pain`);
         }
