@@ -14,7 +14,7 @@ var curr = Number(currentPrice.value)
 
  CalculateProfitAndLoss(actual,qty,curr);
 }
-debugger;
+//debugger;
 function CalculateProfitAndLoss(initial,quantity,Current) {
 
 
